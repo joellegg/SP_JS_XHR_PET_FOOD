@@ -51,8 +51,14 @@ function catFoodHTML() {
                 <td>${catFoodTypesPrices}</td>
             </tr>`;
     }
-
-    $('#cat_food').html(catFoodText);
+    let tableHead = `
+        <tr>
+            <td>Brand</td>
+            <td>Breed</td>
+            <td>Types/Prices</td>
+        </tr>`;
+    let catFoodData = tableHead + catFoodText;
+    $('#cat_food').html(catFoodData);
 }
 
 ///////////////////////////
