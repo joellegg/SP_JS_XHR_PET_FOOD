@@ -1,1 +1,1 @@
-console.log('Good job mate')
+console.log('Good job mate');
