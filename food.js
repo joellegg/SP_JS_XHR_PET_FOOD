@@ -24,8 +24,13 @@ function dogFoodHTML() {
                 <td>${dogFoodTypesPrices}</td>
             </tr>`;
     }
-
-    $('#dog_food').html(dogFoodText);
+    let tableHead = `
+        <tr>
+            <td>Brand</td>
+            <td>Types/Prices</td>
+        </tr>`;
+    let dogFoodData = tableHead + dogFoodText;
+    $('#dog_food').html(dogFoodData);
 }
 
 function catFoodHTML() {
