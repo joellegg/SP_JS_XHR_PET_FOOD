@@ -2,6 +2,8 @@
 ///  Global Variables  ////
 ///////////////////////////
 
+let dogFood = {};
+
 ///////////////////////////
 /////    Functions    /////
 ///////////////////////////
@@ -14,6 +16,7 @@
 /////       XMR       /////
 ///////////////////////////
 
-$.getJSON('JSON/music2.json', function(data) {
-    add2Music = data;
+$.getJSON('JSON/dog-food.json', function(data) {
+    dogFood = data;
+    console.log(dogFood)
 });
