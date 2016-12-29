@@ -3,6 +3,7 @@
 ///////////////////////////
 
 let dogFood = {};
+let catFood = {};
 
 ///////////////////////////
 /////    Functions    /////
@@ -19,4 +20,9 @@ let dogFood = {};
 $.getJSON('JSON/dog-food.json', function(data) {
     dogFood = data;
     console.log(dogFood)
+});
+
+$.getJSON('JSON/cat-food.json', function(data) {
+    catFood = data;
+    console.log(catFood)
 });
